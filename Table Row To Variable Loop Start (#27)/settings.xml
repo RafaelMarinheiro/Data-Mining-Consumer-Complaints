@@ -48,13 +48,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="URL"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="file:/Users/marinheiro/Desktop/Projects/knime/Consumer_Complaints/data/2015-04.csv"/>
+<entry key="value" type="xstring" value="file:/Users/marinheiro/Desktop/Projects/knime/Consumer_Complaints/data/2015-04_sanitized.csv"/>
 </config>
 <config key="Variable_9">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Location"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="/Users/marinheiro/Desktop/Projects/knime/Consumer_Complaints/data/2015-04.csv"/>
+<entry key="value" type="xstring" value="/Users/marinheiro/Desktop/Projects/knime/Consumer_Complaints/data/2015-04_sanitized.csv"/>
 </config>
 <config key="Variable_10">
 <entry key="type" type="xstring" value="variable"/>
@@ -119,6 +119,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="4840d093-a72e-4577-aec4-dedfbe8ddf90"/>
+<entry key="file_store_id" type="xstring" value="30956f85-90ae-440b-88c0-bc73285cea1f"/>
 </config>
 </config>

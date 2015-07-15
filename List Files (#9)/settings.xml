@@ -6,10 +6,10 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="EXTENSIONS" type="xstring" value="csv"/>
+<entry key="EXTENSIONS" type="xstring" value="*_sanitized.csv"/>
 <entry key="FILESETTINGS" type="xstring" value="/Users/marinheiro/Desktop/Projects/knime/Consumer_Complaints/data"/>
 <entry key="RECURSIVE_SETTINGS" type="xboolean" value="false"/>
-<entry key="FILTER_SETTINGS" type="xstring" value="Extensions"/>
+<entry key="FILTER_SETTINGS" type="xstring" value="Wildcards"/>
 <entry key="CASESENSITVE" type="xboolean" value="false"/>
 </config>
 <config key="nodeAnnotation">
@@ -45,6 +45,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="54c11a01-d183-4308-8f93-6cfa3e7e0076"/>
+<entry key="file_store_id" type="xstring" value="f2d6cfe4-57e0-467a-b69d-bf62e8a17bc9"/>
 </config>
 </config>

@@ -30,7 +30,11 @@
 <entry key="gzip" type="xboolean" value="false"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Output file '/Users/marinheiro/Desktop/Projects/knime/Consumer_Complaints/results/correlation.csv' exists and will be overwritten"/>
+</config>
 <entry key="factory" type="xstring" value="org.knime.base.node.io.csvwriter.CSVWriterNodeFactory"/>
 <entry key="node-name" type="xstring" value="CSV Writer"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -39,11 +43,11 @@
 <entry key="node-bundle-version" type="xstring" value="2.11.3.0046666"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="CSV Writer"/>
-<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports"/>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="f6e7a242-a74d-41f2-97c4-e30b77e357db"/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
 </config>
 </config>

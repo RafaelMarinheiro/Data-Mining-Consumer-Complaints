@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="node.script_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="node.script" type="xstring" value="# -*- coding: UTF-8 -*-%%00010%%00010from collections import Counter%%00010import unicodedata%%00010%%00010def clean(data):%%00010    for k in data:%%00010        for i in range(len(data[k])):%%00010            if isinstance(data[k][i], str):%%00010                s = data[k][i]%%00010                s = s.replace(&quot;,&quot;, &quot;_&quot;)%%00010                data[k][i] = s%%00010                # print s%%00010    return data%%00010%%00010%%00010%%00010def filterByQuantity(data, columnName, minPercentage=0.05, defValue=&quot;Other&quot;):%%00010    countDict = createCountDict(data, columnName)%%00010    for i in range(len(data[columnName])):%%00010        if countDict[data[columnName][i]] &lt; minPercentage:%%00010            data[columnName][i] = defValue%%00010    return data%%00010%%00010def createCountDict(data, columnName):%%00010    d = Counter(data[columnName])%%00010    total = len(data[columnName]) + 0.0%%00010    countDict = {}%%00010    for k in d:%%00010        countDict[k] = d[k]/total%%00010    return countDict%%00010%%00010data = kIn%%00010data = clean(data)%%00010data = filterByQuantity(data, &quot;Cidade&quot;)%%00010data = filterByQuantity(data, &quot;Area&quot;)%%00010data = filterByQuantity(data, &quot;Segmento de Mercado&quot;)%%00010data = filterByQuantity(data, &quot;Assunto&quot;)%%00010data = filterByQuantity(data, &quot;Problema&quot;)%%00010data = filterByQuantity(data, &quot;Grupo Problema&quot;)%%00010%%00010pyOut = data%%00010"/>
+<config key="node.template_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="node.template" type="xstring" value=""/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="factory" type="xstring" value="de.mpicbg.knime.scripting.python.PythonSnippetNodeFactory"/>
+<entry key="node-name" type="xstring" value="Python Snippet"/>
+<entry key="node-bundle-name" type="xstring" value="Ptyhon Scripting Integration for KNIME"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="de.mpicbg.knime.scripting.python"/>
+<entry key="node-bundle-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)"/>
+<entry key="node-bundle-version" type="xstring" value="2.0.2.201505280911"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Python Snippet"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 50979, Cols: 19"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="fa011337-e272-4e45-979e-725bd620ab80"/>
+</config>
+</config>

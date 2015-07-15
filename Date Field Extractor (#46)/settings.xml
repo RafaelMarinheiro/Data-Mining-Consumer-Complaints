@@ -50,10 +50,10 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="include.Day of month" type="xboolean" value="false"/>
+<entry key="include.Day of month" type="xboolean" value="true"/>
 <config key="Day of month.column.name_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-<entry key="EnabledStatus" type="xboolean" value="false"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="Day of month.column.name" type="xstring" value="Day of month"/>
 <config key="include.Day of week_Internals">
@@ -109,12 +109,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 89724, Cols: 18"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 89724, Cols: 19"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="6d1b5f86-be08-4ead-9561-7d6105555874"/>
+<entry key="file_store_id" type="xstring" value="3ec801ed-cd89-42ba-a72a-9cdd5aef5440"/>
 </config>
 </config>
