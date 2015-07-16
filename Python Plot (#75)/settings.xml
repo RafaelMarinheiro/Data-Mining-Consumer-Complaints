@@ -20,7 +20,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="figure.output.file" type="xstring" value="/Users/marinheiro/Desktop/Projects/knime/Consumer_Complaints/results/plots/ROC_Decision_Tree.png"/>
+<entry key="figure.output.file" type="xstring" value="/Users/marinheiro/Desktop/Projects/knime/Consumer_Complaints/results/plots/Telefonia_ROC_Decision_Tree.png"/>
 <config key="overwrite.ok_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -72,6 +72,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="71765ad9-59de-4dce-8410-7119997e86f6"/>
+<entry key="file_store_id" type="xstring" value="d3dacec4-0c34-4398-aeb5-0f91201c2a44"/>
 </config>
 </config>
